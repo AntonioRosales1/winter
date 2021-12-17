@@ -1,25 +1,23 @@
 import React from "react";
+import Products from "./Products";
 
 const Home = () => {
-    return (
-        <div className='hero'>
-            <div className="card mb-3" style="max-width: 540px;">
-                <div className="row g-0">
-                    <div className="col-md-4">
-                        <img src="/images/Winter1.png" class="img-fluid rounded-start" alt="..." />
-                    </div>
-                    <div class="col-md-8">
-                        <div class="card-body">
-                            <h5 className="card-title">Card title</h5>
-                            <p className="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                            <p className="card-text"><small className="text-muted">Last updated 3 mins ago</small></p>
-                        </div>
-                    </div>
-                </div>
+  return (
+    <div className="hero">
+      <div className="card bg-dark text-white border-0">
+        <img src="./images/winter.png" className="card-img" alt="Background" height="550px" />
+        <div className="card-img-overlay d-flex flex-column justify-content-center">
+            <div className="container">
+          <h5 className="card-title display-3 fw-bolder mb-0">NEW SEASON ARRIVALS</h5>
+          <p className="card-text lead fs-2">
+            CHECK OUT ALL THE TRENDS
+          </p>
             </div>
-
         </div>
-    );
-}
+      </div>
+      <Products/>
+    </div>
+  );
+};
 
 export default Home;
